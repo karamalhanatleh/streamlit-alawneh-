@@ -57,6 +57,23 @@ image_html = f"""
     </style>
     <img src="{image_url}">
 """
+apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'
+
+def download_apk():
+    with st.spinner('Downloading APK...'):
+        response = requests.get(apk_url)
+        with open('my-app.apk', 'wb') as f:
+            f.write(response.content)
+    st.success('APK downloaded successfully')
+
+download_button = st.download_button(
+    label='Download APK',
+    data=apk_url,
+    file_name='my-app.apk',
+    on_click=download_apk
+)
+
+
 st.markdown(audio_html, unsafe_allow_html=True)
 st.markdown(image_html, unsafe_allow_html=True)
 
