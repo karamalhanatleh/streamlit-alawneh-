@@ -1,5 +1,7 @@
 
 import streamlit as st
+import webbrowser
+
 #audio_url = "https://dl2.sura.pw/dl/reciter/1/32/001.mp3?h=tpbF6zaHPnBUmdu54vcwoQ&expires=1695739962&dl=true"
 image_url = "https://j.top4top.io/p_2824pxkzj1.jpg"
 audio_url='https://ia801400.us.archive.org/34/items/duaa-ommy_001/002.mp3'
@@ -58,7 +60,6 @@ st.write("                ")
 st.write("                ")
 st.write("                ")
 
-btn = st.download_button(
-label ="Download Apk",
-data=apk_url
-)
+if st.button("Download"):
+    link = apk_url
+    webbrowser.open(link, new=2)
