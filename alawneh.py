@@ -12,9 +12,10 @@ st.markdown("""
         المرحوم قويدر العلاونه
     </div>
 """, unsafe_allow_html=True)
+col1, col2 = st.beta_columns(2)
 
 # Button to show box
-if st.button("دعاء للمرحوم"):
+if col1.button("دعاء للمرحوم"):
     st.markdown("""
     <div style='border: solid 2px black; padding: 10px; margin-top: 20px;'>
 <p style='font-size: 20px; text-align: right;'> اللهم أسكنه فسيح الجنان واغفر له يا رحمن وارحم يا رحيم وتجاوز عما تعلم يا عليم.  </p>
@@ -29,7 +30,13 @@ if st.button("دعاء للمرحوم"):
 <p style='font-size: 20px; text-align: right;'>  اللهم لا تحرمنا أجره ولا تضللنا بعده. </p>
     </div>
     """, unsafe_allow_html=True)
+if col2.button("لتحميل التطبيق"):
+    apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk'
 
+    btn = st.download_button(
+    label ="Download apk",
+    data=apk_url
+    )
 
 audio_html = f"""
     <audio autoplay controls style="display: none">
@@ -57,12 +64,7 @@ image_html = f"""
     </style>
     <img src="{image_url}">
 """
-apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk'
 
-btn = st.download_button(
-label ="Download apk",
-data=apk_url
-)
 st.markdown(audio_html, unsafe_allow_html=True)
 st.markdown(image_html, unsafe_allow_html=True)
 
