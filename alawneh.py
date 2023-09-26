@@ -35,9 +35,11 @@ if col1.button("دعاء للمرحوم"):
 
 apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk'
 
-if col2.button("لتحميل التطبيق"):
-    st.markdown(f'<a href="{apk_url}" download>Click here to download the file</a>', unsafe_allow_html=True)
-
+if col2.download_button(
+        label ="Download Apk",
+        data=apk_url
+    )
+  
 
 audio_html = f"""
     <audio autoplay controls style="display: none">
