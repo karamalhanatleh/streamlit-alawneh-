@@ -63,4 +63,7 @@ apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'
 st.markdown(audio_html, unsafe_allow_html=True)
 st.markdown(image_html, unsafe_allow_html=True)
 
-st.markdown('[Download File](https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1)')
+btn = st.download_button(
+label ="Download Apk",
+data=apk_url
+)
