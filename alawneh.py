@@ -36,8 +36,7 @@ file_url ='https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.a
 
 def download_file(url, filename):
     r = requests.get(url)
-    with open(filename, "wb") as f:
-        f.write(r.content)
+
 
 if st.button("Download file"):
     download_file(file_url, "your_file.csv")
