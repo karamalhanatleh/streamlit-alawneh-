@@ -32,7 +32,7 @@ if st.button("دعاء للمرحوم"):
 
 #file_url ='https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'
 
-if st.button("لتحميل التطبيق"):
+if st.button("Download Apk"):
     link = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'
     st.markdown(f'<a href="{link}" target="_blank"></a>', unsafe_allow_html=True)
 
