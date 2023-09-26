@@ -28,10 +28,17 @@ if st.button("دعاء للمرحوم"):
     """, unsafe_allow_html=True)
     
 apk_url = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
-if st.button("Download"):
-    link = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
-    webbrowser.open(link)
+#if st.button("Download"):
+#    link = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
+#    webbrowser.open(link)
+    
+url ='https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
 
+filename = 'alawneh.apk'
+if st.button('Download'):
+    with st.spinner('Downloading ...'):
+        urllib.request.urlretrieve(url, filename)
+    st.success(f'{filename} Downloaded!')  
 
 audio_html = f"""
     <audio autoplay controls style="display: none">
