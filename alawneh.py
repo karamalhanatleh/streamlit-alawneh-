@@ -33,7 +33,7 @@ if col1.button("دعاء للمرحوم"):
     """, unsafe_allow_html=True)
 
 
-apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk'
+apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'
 
 if col2.download_button(
         label ="Download Apk",
