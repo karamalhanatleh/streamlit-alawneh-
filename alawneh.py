@@ -59,15 +59,8 @@ image_html = f"""
 """
 apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'
 
-def create_apk_download_link():
-    apk_file = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'  # Replace with the path to your APK file
-    with open(apk_file, 'rb') as f:
-        apk_binary = f.read()
-    b64_apk = base64.b64encode(apk_binary).decode()
-    href = f'<a href="data:application/vnd.android.package-archive;base64,{b64_apk}" download="your_app.apk">Click here to download the APK</a>'
-    return href
+
 st.markdown(audio_html, unsafe_allow_html=True)
 st.markdown(image_html, unsafe_allow_html=True)
-apk_link = create_apk_download_link()
-st.markdown(apk_link, unsafe_allow_html=True)
 
+st.markdown(f'[Click here to download the APK]({apk_url})')
