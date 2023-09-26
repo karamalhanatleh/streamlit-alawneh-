@@ -28,16 +28,13 @@ if st.button("دعاء للمرحوم"):
     </div>
     """, unsafe_allow_html=True)
     
-apk_url = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
-#if st.button("Download"):
-#    link = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
-#    webbrowser.open(link)
-    
-file_url ='https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'
+#apk_url = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
+
+#file_url ='https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'
 
 if st.button("لتحميل التطبيق"):
     link = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'
-    st.markdown(f'<a href="{link}" target="_blank">Go to example.com</a>', unsafe_allow_html=True)
+    st.markdown(f'<a href="{link}" target="_blank"></a>', unsafe_allow_html=True)
 
 audio_html = f"""
     <audio autoplay controls style="display: none">
