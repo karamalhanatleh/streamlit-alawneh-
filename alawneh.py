@@ -59,6 +59,6 @@ st.write("                ")
 st.write("                ")
 
 btn = st.download_button(
-label ="لتحميل التطبيق",
+label ="Download Apk",
 data=apk_url
 )
