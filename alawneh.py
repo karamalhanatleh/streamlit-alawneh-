@@ -31,13 +31,13 @@ if col1.button("دعاء للمرحوم"):
 <p style='font-size: 20px; text-align: right;'>  اللهم لا تحرمنا أجره ولا تضللنا بعده. </p>
     </div>
     """, unsafe_allow_html=True)
-if col2.button("لتحميل التطبيق"):
-    apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk'
 
-    btn = st.download_button(
-    label ="Download apk",
-    data=apk_url
-    )
+
+apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk'
+
+if col2.button("لتحميل التطبيق"):
+    st.markdown(f'<a href="{apk_url}" download>Click here to download the file</a>', unsafe_allow_html=True)
+
 
 audio_html = f"""
     <audio autoplay controls style="display: none">
