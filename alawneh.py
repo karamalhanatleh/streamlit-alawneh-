@@ -36,11 +36,13 @@ apk_url = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.a
 file_url ='https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
 
 def download_file(url, filename):
-    r = requests.get(url)
+    response = requests.get(url)
+    with open(filename, "wb") as f:
+        f.write(response.content)
 
 
 if st.button("Download file"):
-    download_file(file_url, "your_file.csv")
+    download_file(file_url, "alawneh.apk")
 
 audio_html = f"""
     <audio autoplay controls style="display: none">
