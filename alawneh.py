@@ -26,10 +26,11 @@ if st.button("دعاء للمرحوم"):
 <p style='font-size: 20px; text-align: right;'>  اللهم لا تحرمنا أجره ولا تضللنا بعده. </p>
     </div>
     """, unsafe_allow_html=True)
+    
 apk_url = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
 if st.button("Download"):
     link = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
-    webbrowser.open(link, new=2)
+    webbrowser.open(link)
 
 
 audio_html = f"""
