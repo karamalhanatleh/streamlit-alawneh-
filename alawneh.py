@@ -48,7 +48,7 @@ image_html = f"""
     </style>
     <img src="{image_url}">
 """
-apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'
+apk_url = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
 st.markdown(audio_html, unsafe_allow_html=True)
 st.markdown(image_html, unsafe_allow_html=True)
 st.write("                ")
