@@ -1,22 +1,15 @@
 
-
 import streamlit as st
-
 #audio_url = "https://dl2.sura.pw/dl/reciter/1/32/001.mp3?h=tpbF6zaHPnBUmdu54vcwoQ&expires=1695739962&dl=true"
-
 image_url = "https://j.top4top.io/p_2824pxkzj1.jpg"
 audio_url='https://ia801400.us.archive.org/34/items/duaa-ommy_001/002.mp3'
-
 st.markdown("""
     <div style='text-align:center; font-size: 40px;'>
         المرحوم قويدر العلاونه
     </div>
 """, unsafe_allow_html=True)
-
-col1, col2 = st.columns(2)
-
 # Button to show box
-if col1.button("دعاء للمرحوم"):
+if st.button("دعاء للمرحوم"):
     st.markdown("""
     <div style='border: solid 2px black; padding: 10px; margin-top: 20px;'>
 <p style='font-size: 20px; text-align: right;'> اللهم أسكنه فسيح الجنان واغفر له يا رحمن وارحم يا رحيم وتجاوز عما تعلم يا عليم.  </p>
@@ -31,26 +24,14 @@ if col1.button("دعاء للمرحوم"):
 <p style='font-size: 20px; text-align: right;'>  اللهم لا تحرمنا أجره ولا تضللنا بعده. </p>
     </div>
     """, unsafe_allow_html=True)
-
-
-apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'
-
-if col2.download_button(
-        label ="Download Apk",
-        data=apk_url
-    )
-  
-
 audio_html = f"""
     <audio autoplay controls style="display: none">
         <source src="{audio_url}" type="audio/mp3">
         Your browser does not supoprt the audio element.
     </audio>
 """
-
 # Image URL
 image_url = "https://j.top4top.io/p_2824pxkzj1.jpg"
-
 # Image HTML
 image_html = f"""
     <style>
@@ -67,9 +48,22 @@ image_html = f"""
     </style>
     <img src="{image_url}">
 """
+apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk'
+
 
 st.markdown(audio_html, unsafe_allow_html=True)
 st.markdown(image_html, unsafe_allow_html=True)
+st.write("                ")
+st.write("                ")
 
+st.write("                ")
+st.write("                ")
+st.write("                ")
+st.write("                ")
 
-
+btn = st.download_button(
+label ="لتحميل التطبيق",
+data=apk_url
+)
+st.markdown(audio_html, unsafe_allow_html=True)
+st.markdown(image_html, unsafe_allow_html=True)
