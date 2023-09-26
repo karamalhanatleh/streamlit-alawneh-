@@ -35,14 +35,9 @@ apk_url = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.a
     
 file_url ='https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'
 
-def download_file(url, filename):
-    response = requests.get(url)
-    with open(filename, "wb") as f:
-        f.write(response.content)
-
-
-if st.button("Download file"):
-    download_file(file_url, "alawneh.apk")
+if st.button("لتحميل التطبيق"):
+    link = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk?v=1'
+    st.markdown(f'<a href="{link}" target="_blank">Go to example.com</a>', unsafe_allow_html=True)
 
 audio_html = f"""
     <audio autoplay controls style="display: none">
