@@ -12,7 +12,8 @@ st.markdown("""
         المرحوم قويدر العلاونه
     </div>
 """, unsafe_allow_html=True)
-col1, col2 = st.beta_columns(2)
+
+col1, col2 = st.columns(2)
 
 # Button to show box
 if col1.button("دعاء للمرحوم"):
