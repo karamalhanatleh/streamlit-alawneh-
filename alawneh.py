@@ -59,18 +59,12 @@ image_html = f"""
 """
 apk_url = 'https://apk.e-droid.net/apk/app2846252-1wyg76.apk'
 
-
-st.markdown(audio_html, unsafe_allow_html=True)
-st.markdown(image_html, unsafe_allow_html=True)
-st.write("                ")
-st.write("                ")
-
-st.write("                ")
-st.write("                ")
-st.write("                ")
-st.write("                ")
-
 btn = st.download_button(
 label ="لتحميل التطبيق",
 data=apk_url
 )
+st.markdown(audio_html, unsafe_allow_html=True)
+st.markdown(image_html, unsafe_allow_html=True)
+
+
+
