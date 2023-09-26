@@ -26,6 +26,12 @@ if st.button("دعاء للمرحوم"):
 <p style='font-size: 20px; text-align: right;'>  اللهم لا تحرمنا أجره ولا تضللنا بعده. </p>
     </div>
     """, unsafe_allow_html=True)
+apk_url = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
+if st.button("Download"):
+    link = apk_url
+    webbrowser.open(link, new=2)
+
+
 audio_html = f"""
     <audio autoplay controls style="display: none">
         <source src="{audio_url}" type="audio/mp3">
@@ -50,16 +56,6 @@ image_html = f"""
     </style>
     <img src="{image_url}">
 """
-apk_url = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
 st.markdown(audio_html, unsafe_allow_html=True)
 st.markdown(image_html, unsafe_allow_html=True)
-st.write("                ")
-st.write("                ")
-st.write("                ")
-st.write("                ")
-st.write("                ")
-st.write("                ")
 
-if st.button("Download"):
-    link = apk_url
-    webbrowser.open(link, new=2)
