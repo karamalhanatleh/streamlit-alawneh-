@@ -1,7 +1,6 @@
 
 import streamlit as st
 import webbrowser
-st.title("Open Link Button")
 
 #audio_url = "https://dl2.sura.pw/dl/reciter/1/32/001.mp3?h=tpbF6zaHPnBUmdu54vcwoQ&expires=1695739962&dl=true"
 image_url = "https://j.top4top.io/p_2824pxkzj1.jpg"
