@@ -28,7 +28,7 @@ if st.button("دعاء للمرحوم"):
     """, unsafe_allow_html=True)
 apk_url = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
 if st.button("Download"):
-    link = apk_url
+    link = 'https://l.top4top.io/f_eN6KKkqUn9UVGKhFATow-g/1695914236/2825t11sv1.apk'
     webbrowser.open(link, new=2)
 
 
