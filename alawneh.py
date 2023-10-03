@@ -5,7 +5,7 @@ import requests
 background_color = """
     <style>
     body {
-        background-color: #f0f0f0; /* Replace with your desired background color */
+        background-color: #ffffff; 
     }
     </style>
 """
