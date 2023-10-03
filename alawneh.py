@@ -2,6 +2,14 @@
 import streamlit as st
 import webbrowser
 import requests
+background_color = """
+    <style>
+    body {
+        background-color: #f0f0f0; /* Replace with your desired background color */
+    }
+    </style>
+"""
+st.markdown(background_color, unsafe_allow_html=True)
 
 #audio_url = "https://dl2.sura.pw/dl/reciter/1/32/001.mp3?h=tpbF6zaHPnBUmdu54vcwoQ&expires=1695739962&dl=true"
 image_url = "https://j.top4top.io/p_2824pxkzj1.jpg"
